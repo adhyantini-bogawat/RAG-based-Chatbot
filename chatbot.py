@@ -33,7 +33,7 @@ def process_input(question):
 
     #perform the RAG 
 
-    after_rag_template = """ Answer the question based only on the following context and suggest top 3 recommendations:{context} Question: {question} """
+    after_rag_template = """ Answer the question based only on the following context, suggest top 3 recommendations, and ask a follow-up question to keep the conversation going:{context} Question: {question} """
     after_rag_prompt = ChatPromptTemplate.from_template(after_rag_template)
     after_rag_chain = ({"context": retriever, "question": RunnablePassthrough()} | after_rag_prompt | model | StrOutputParser())
 
@@ -50,6 +50,7 @@ if st.button('Enter'):
     with st.spinner('Processing...'):
         answer = process_input( question)
         st.text_area("Answer", value=answer, height=300, disabled=True)
+
 
 
 

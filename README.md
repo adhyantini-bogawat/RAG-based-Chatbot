@@ -1,5 +1,8 @@
 # RAG Based Chatbot
 
+
+Youtube video link for performance metrics: https://youtu.be/9oUXcdD1McI
+
 There are days when we all feel a lack of motivation to get going. This chatbot helps users by providing ways to get that energy going based on whatever way they need help!
 The demo of the application can be found here: https://youtu.be/E0llSDO9n9E
 

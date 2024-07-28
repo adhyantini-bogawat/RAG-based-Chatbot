@@ -47,7 +47,7 @@ expected_answers = [
 "1. Set a consistent wake-up time each day to establish a regular routine. 2. Prepare as much as possible the night before, such as laying out clothes, preparing breakfast, or planning your day's schedule.3. Create a pleasant morning environment by setting up a comfortable and inviting space. This could include playing soft music, using aromatherapy, or opening the curtains to let in natural light.4. Start your day with an activity that energizes you and triggers positive feelings, like exercise, journaling, or meditation. These habits can help set a productive tone for the rest of the day.5. Set clear goals for the day, focusing on the outcomes you want rather than the specific tasks. This helps maintain motivation by keeping your focus on the end result.6. Gradually increase the difficulty level of your morning routine to build resilience and overcome challenges that may arise during the day.7. If possible, avoid checking emails or social media first thing in the morning, as these can be distractions that drain energy and motivation.8. Celebrate small successes throughout the day to reinforce positive habits and maintain a sense of accomplishment."
 ]
 # Fetch the document
-pdfloader = PyPDFLoader("/Users/sangram/Downloads/Atomic_habits.pdf")
+pdfloader = PyPDFLoader("D:/NEU/PromptEng/Adhyantini_Bogawat_002766612/Atomic_habits.pdf")
 pdfpages = pdfloader.load_and_split()
 # Loading the document using Langchains inbuilt extractors, formatters, loaders, embeddings and LLM's
 mydocuments = pdfloader.load()
